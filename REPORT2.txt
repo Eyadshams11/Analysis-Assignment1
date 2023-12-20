@@ -1,0 +1,33 @@
+In the presented Java code for sequence alignment using dynamic programming,
+we implement the algorithm to find the optimal alignment between two given sequences. 
+Below is a brief explanation of the approach and a summary of the time complexity analysis
+
+Overall Time Complexity: O(n*m)
+The Java code implements the algorithm for sequence alignment using dynamic programming. The approach involves:
+
+Dynamic Programming Matrix:
+
+A 2D matrix dp is utilized to store scores for partial alignments.
+dp[i][j] represents the optimal score for aligning the first i characters of sequence x with the first j characters of sequence y.
+Scoring Rules:
+
+Scoring matrix defines scores for matching nucleotides or a nucleotide and a gap.
+Updates to the matrix are based on three operations: match, delete, and insert.
+Traceback:
+
+After constructing the matrix, a traceback is performed to find the optimal alignment.
+Starting from the bottom-right corner, arrows (diagonal, left, or up) guide the reconstruction.
+Time Complexity Analysis:
+
+Matrix Filling:
+
+Nested loops result in a time complexity of O(nm), where n is the length of x and m is the length of y.
+The dynamic programming matrix of size (n+1) x (m+1) is filled with scores.
+Traceback:
+
+Takes O(nm) time in the worst case, traversing the entire matrix.
+
+
+
+
+
