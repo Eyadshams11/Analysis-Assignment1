@@ -1,0 +1,4 @@
+To determine whether an undirected graph is a tree:
+Connectivity Check: Use DFS or BFS to check if the graph is connected (O(V + E) time).
+Acyclic Check: Detect cycles in the graph using modified DFS; a tree should be acyclic (O(V + E) time)
+The overall running time is O(V + E), making it efficient for practical cases. The graph is a tree if it is connected, acyclic, and has no parallel edges or self-loops.
